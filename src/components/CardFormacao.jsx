@@ -43,6 +43,19 @@ const DivHead = styled.div`
     height: 100%;
     object-fit: cover;
 }
+
+@media (max-width: 1024px) {
+    .card-projeto {
+        flex: 0 0 100%;
+        max-width: 100%;
+        max-height: auto;
+    }
+
+    .card-projeto:hover {
+        transform: scale(1.2);
+        z-index: 10;
+    }
+}
 `;
 
 export function CardFormacao() {

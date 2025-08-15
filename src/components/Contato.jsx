@@ -6,10 +6,10 @@ const DivHead = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding: 40px;
   color: white;
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
+  overflow-y: hidden;
 
 
 form {
@@ -72,14 +72,17 @@ input[type="submit"]:hover {
 }
 
 .contate-me{
-  width: 20%;
   flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
 }
 
 h2{
   text-align: center;
   justify-content: center;
-  margin-bottom: 10%;
+  margin-bottom: 5%;
 }
 
 .loader {
@@ -865,6 +868,12 @@ h2{
     opacity: 1;
   }
 }
+
+@media (max-width:1550px) {
+  .loader{
+    display: none;
+  }
+}
 `;
 
 export function Contato() {
@@ -889,7 +898,6 @@ export function Contato() {
 
   return (
     <DivHead>
-
       <div className="loader">
         <div className="box box0">
           <div />
@@ -920,19 +928,19 @@ export function Contato() {
         </div>
       </div>
         <div id="contato" className="contate-me">
-          <h2>Interassdo? Me mande um Email</h2>
-       <form ref={form} onSubmit={sendEmail}>
-          <label>Nome</label>
-          <input type="text" name="user_name" placeholder="Nome..." required />
+          <h2>Interessado? Me mande um Email</h2>
+            <form ref={form} onSubmit={sendEmail}>
+                <label>Nome</label>
+                <input type="text" name="user_name" placeholder="Nome..." required />
 
-          <label>Email</label>
-          <input type="email" className="form-control" name="user_email" placeholder="name@example.com" required/>
+                <label>Email</label>
+                <input type="email" className="form-control" name="user_email" placeholder="name@example.com" required/>
 
-          <label>Mensagem</label>
-          <textarea name="message" rows="5" className="text_msg" placeholder="Digite aqui a mensagem..." required />
+                <label>Mensagem</label>
+                <textarea name="message" rows="5" className="text_msg" placeholder="Digite aqui a mensagem..." required />
 
-          <input type="submit" value="Enviar" />
-        </form>  
+                <input type="submit" value="Enviar" />
+              </form>  
         </div>
 
       <div className="loader">

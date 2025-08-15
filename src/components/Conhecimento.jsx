@@ -4,7 +4,7 @@ const DivHead = styled.div`
   color: white;
   font-family: 'Poppins';
   font-size: 38px;
-  overflow-x: hidden;
+
 
 .divisoria{
   width: 120%;
@@ -43,6 +43,13 @@ const DivHead = styled.div`
 img {
   height: 75%;
   width: auto;
+}
+
+@media (max-width: 1550px) {
+  .img_lingua{
+    width: 18vw;
+    height: 18vw;
+  }
 }
 `;
 

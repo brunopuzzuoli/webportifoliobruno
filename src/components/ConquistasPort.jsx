@@ -13,6 +13,7 @@ const DivHead = styled.div`
   width: 100%;
   font-size: 32px;
   overflow-x: hidden;
+  
 section {
   width: 85%;
 }
@@ -70,6 +71,7 @@ section {
   align-items: center;
   margin: 3%;
 }
+
 
 `;
 

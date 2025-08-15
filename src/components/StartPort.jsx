@@ -55,8 +55,9 @@ overflow: hidden;
     0 0 1.5em 0.4em var(--glow-spread-color),
     inset 0 0 0.5em 0.1em var(--glow-color);
   text-shadow: 0 0 0.4em var(--glow-color);
+  position: relative;
   transition: all 0.3s;
-  width: 40%;
+  width: 100%;
 }
 
 .glowbutton::after {
@@ -83,20 +84,25 @@ overflow: hidden;
 }
 
 .glowbutton:active {
-  box-shadow:
-    0 0 0.3em 0.1em var(--glow-color),
-    0 0 1.2em 0.4em var(--glow-spread-color),
-    inset 0 0 0.3em 0.1em var(--glow-color);
+
 }
 
 .links{
+  margin-top: 3%;
   display: flex;
   justify-content: left;
   align-items: center
 }
 
+a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
 .img_git{
-  width: 18%;
+  width: 35%;
   padding: 5%;
 }
 /* Monitores médios/grandes */
@@ -105,7 +111,7 @@ overflow: hidden;
     flex-direction: column;
   }
   .introduction_foto{
-    width: 70%;
+    width: 90%;
   }
   .introduction_text{
     width: 90%;
@@ -115,7 +121,7 @@ overflow: hidden;
 /* Notebooks pequenos */
 @media (max-width: 1024px) {
   .glowbutton {
-  font-size: 1.6vw;
+  font-size: 1.9vw;
   }
 }
 
@@ -138,7 +144,6 @@ overflow: hidden;
 
 export function StartPort() {
   return (
-    <>
       <DivHead>
         <div className="introduction">
           <div className="introduction_text">
@@ -158,16 +163,14 @@ export function StartPort() {
               >
                 Contate-me
               </button>
-              <img className="img_git" src="images/github.png" alt="a" /> 
-              <img className="img_git" src="images/linkedin_icon.png" alt="a" />
+              <a href="https://github.com/brunopuzzuoli" target="_blank"><img className="img_git" src="images/github.png" alt="a" /></a> 
+              <a href="https://www.linkedin.com/in/bruno-puzzuoli-a06456375" target="_blank"><img className="img_git" src="images/linkedin_icon.png" alt="a" /></a>
             </div>
           </div>
           <div className="introduction_foto">
             <img className="w-100"  src="images/Group 2.png" alt="foto" />
           </div>
         </div>
-      
       </DivHead>
-    </>
   );
 }
