@@ -1,6 +1,6 @@
 import { useState } from "react";
 import styled from "styled-components";
-import { CardProjeto } from "./CardProjeto"; // Importa o card separado
+import { CardProjeto } from "./CardProjeto";
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import { CardFormacao } from "./CardFormacao";
 
@@ -72,6 +72,11 @@ section {
   margin: 3%;
 }
 
+@media (max-width: 1550px) {
+  section {
+  font-size: 4vw;
+}
+}
 
 `;
 

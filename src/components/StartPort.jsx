@@ -60,19 +60,6 @@ overflow: hidden;
   width: 100%;
 }
 
-.glowbutton::after {
-  pointer-events: none;
-  content: "";
-  position: absolute;
-  top: 120%;
-  left: 0;
-  height: 90%;
-  width: 100%;
-  background-color: var(--glow-spread-color);
-  filter: blur(0.9em);
-  opacity: 0.3;
-  transform: perspective(1.5em) rotateX(35deg) scale(1, 0.6);
-}
 
 .glowbutton:hover {
   color: var(--btn-color);
