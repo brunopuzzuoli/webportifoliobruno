@@ -7,7 +7,7 @@ const DivHead = styled.div`
 
 
 .divisoria{
-  width: 120%;
+  width: 100%;
   height: 50px;
   background-color: #1F1F1F;
   margin: 5% 0% 3% 0%;
