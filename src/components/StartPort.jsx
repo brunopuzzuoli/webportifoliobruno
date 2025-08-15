@@ -4,7 +4,7 @@ const DivHead = styled.div`
 display: flex;
 justify-content: center;
 align-items: center;
-padding: 5%;
+padding: 10%;
 overflow: hidden;
 
 .introduction{
@@ -108,7 +108,7 @@ overflow: hidden;
     width: 70%;
   }
   .introduction_text{
-    width: 70%;
+    width: 90%;
   }
 }
 
@@ -122,10 +122,10 @@ overflow: hidden;
 /* Tablets */
 @media (max-width: 768px) {
   .introduction_text_ola{
-    font-size: 3.5vw;
+    font-size: 4.2vw;
   }
   .introduction_text_descricao {
-    font-size: 2.8vw;
+    font-size: 3.4vw;
   }
 
 }
