@@ -9,6 +9,7 @@ const DivHead = styled.div`
   padding: 40px;
   color: white;
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
 
 
 form {

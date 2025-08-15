@@ -4,7 +4,7 @@ const DivHead = styled.div`
   color: white;
   font-family: 'Poppins';
   font-size: 38px;
-
+  overflow-x: hidden;
 
 .divisoria{
   width: 120%;

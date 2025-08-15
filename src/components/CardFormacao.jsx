@@ -10,6 +10,7 @@ const DivHead = styled.div`
     align-items: center;
     width: 100%;
     font-size: 32px;
+    overflow-x: hidden;
     
 .card-projeto {
     flex: 0 0 50%;
@@ -18,9 +19,9 @@ const DivHead = styled.div`
     border-radius: 12px;
     border: #111 solid 2px;
     box-shadow: 
-        0 10px 10px rgba(41, 41, 41, 0.4),   
-        0 0 15px rgba(151, 151, 151, 0.05), 
-        0 0 15px rgba(255, 255, 255, 0.1);  
+    0 10px 10px rgba(41, 41, 41, 0.4),   
+    0 0 15px rgba(151, 151, 151, 0.05), 
+    0 0 15px rgba(255, 255, 255, 0.1);  
     background: linear-gradient(170deg, rgba(26, 26, 26, 0.623) 0%, rgb(31, 31, 31) 100%);
     flex-direction: column;
     display: flex;
@@ -33,8 +34,8 @@ const DivHead = styled.div`
 }
 
 .card-projeto:hover {
-  transform: scale(1.2); /* aumenta 10% ao passar o mouse */
-  z-index: 10; /* garante que fique acima das outras divs */
+  transform: scale(1.2);
+  z-index: 10;
 }
 
 .img_certificado {

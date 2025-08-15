@@ -9,6 +9,7 @@ const DivHead = styled.div`
   align-items: center;
   width: 100%;
   font-size: 32px;
+  overflow-x: hidden;
 
 .card-projeto{
   border-radius: 12px;

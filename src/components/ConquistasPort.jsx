@@ -12,64 +12,64 @@ const DivHead = styled.div`
   align-items: center;
   width: 100%;
   font-size: 32px;
+  overflow-x: hidden;
+section {
+  width: 85%;
+}
 
-  section {
-    width: 85%;
-  }
+.item {
+  border-bottom: 2px solid #fff;
+}
 
-  .item {
-    border-bottom: 2px solid #fff;
-  }
+.summary {
+  padding: 30px 0;
+  cursor: pointer;
+  position: relative;
+  user-select: none;
+}
 
-  .summary {
-    padding: 30px 0;
-    cursor: pointer;
-    position: relative;
-    user-select: none;
-  }
+.summary::after {
+  content: "▸";
+  position: absolute;
+  right: 0;
+  transition: transform .25s ease;
+}
 
-  .summary::after {
-    content: "▸";
-    position: absolute;
-    right: 0;
-    transition: transform .25s ease;
-  }
+.item.open .summary::after {
+  transform: rotate(90deg);
+}
 
-  .item.open .summary::after {
-    transform: rotate(90deg);
-  }
+.content {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows .35s ease;
+}
 
-  .content {
-    display: grid;
-    grid-template-rows: 0fr;
-    transition: grid-template-rows .35s ease;
-  }
+.item.open .content {
+  grid-template-rows: 1fr;
+}
 
-  .item.open .content {
-    grid-template-rows: 1fr;
-  }
+.inner {
+  overflow: hidden;
+}
 
-  .inner {
-    overflow: hidden;
-  }
+.inner p {
+  margin: 0;
+  padding: 12px 0 16px 0;
+  opacity: 0;
+  transition: opacity .35s ease;
+}
 
-  .inner p {
-    margin: 0;
-    padding: 12px 0 16px 0;
-    opacity: 0;
-    transition: opacity .35s ease;
-  }
+.item.open .inner p {
+  opacity: 1;
+}
 
-  .item.open .inner p {
-    opacity: 1;
-  }
-
-  .projetos{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 3%;
-  }
+.projetos{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3%;
+}
 
 `;
 
