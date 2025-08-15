@@ -77,6 +77,7 @@ input[type="submit"]:hover {
   justify-content: center;
   align-items: center;
   width: 50%;
+  margin-bottom:5%;
 }
 
 h2{
