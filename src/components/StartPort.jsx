@@ -4,7 +4,7 @@ const DivHead = styled.div`
 display: flex;
 justify-content: center;
 align-items: center;
-padding: 10%;
+padding: 5%;
 overflow: hidden;
 
 .introduction{
