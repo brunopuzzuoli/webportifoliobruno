@@ -54,7 +54,7 @@ img {
   width: auto;
 }
 
-@media (max-width: 1550px) {
+@media (max-width: 1024px) {
   .img_lingua{
     width: 18vw;
     height: 18vw;

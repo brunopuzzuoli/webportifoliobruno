@@ -5,9 +5,9 @@ const DivHead = styled.div`
   padding: 2%;
   color: white;
   display: flex;
-  flex-wrap: wrap; /* permite quebrar linha em telas menores */
-  justify-content: center; /* centraliza os cards */
-  gap: 2%; /* espaçamento entre cards */
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2%;
   font-size: 2vw;
   overflow-x: hidden;
 
@@ -37,6 +37,12 @@ const DivHead = styled.div`
     max-width: 100%;
   }
 
+
+.carousel-item img {
+  width: 100%;
+  object-fit: cover;
+}
+
   .carousel-item img {
     width: 100%;
     height: auto;
@@ -49,7 +55,7 @@ const DivHead = styled.div`
     font-size: 1rem;
     margin: 10px 0;
     text-align: center;
-
+    height: 100%;
     p{
       color: gray;
     }
@@ -71,6 +77,7 @@ const DivHead = styled.div`
     background: linear-gradient(to right, rgba(255,255,255,0.1) 1%, transparent 40%, transparent 60%, rgba(255,255,255,0.1) 100%);
     color: var(--white);
     box-shadow: inset 0 0 10px rgba(255,255,255,0.4), 0 0 9px 3px rgba(255,255,255,0.1);
+    height: 100px;;
   }
 
   .button_projeto:hover {
@@ -142,14 +149,14 @@ export function CardProjeto() {
             <button type="button" data-bs-target="#carousel1" data-bs-slide-to="2" aria-label="Slide 3"></button>
           </div>
           <div className="carousel-inner">
-            <div className="carousel-item active">
-              <img src="images/turi_tela_inicio.png" className="d-block w-100" alt="..." />
+            <div className="carousel-item active h-100">
+              <img src="images/turi_tela_inicio.png" className="d-block w-100 h-100" alt="..." />
             </div>
             <div className="carousel-item">
-              <img src="images/turi_mapa.png" className="d-block w-100" alt="..." />
+              <img src="images/turi_mapa.png" className="d-block w-100 h-100" alt="..." />
             </div>
             <div className="carousel-item">
-              <img src="images/turi_usu.png" className="d-block w-100" alt="..." />
+              <img src="images/turi_usu.png" className="d-block w-100 h-100" alt="..." />
             </div>
           </div>
           <button className="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
@@ -165,7 +172,12 @@ export function CardProjeto() {
           <h2>TuriSantos</h2>
           <p>Um site que tem como objetivo aprimorar o aproveitamento dos pontos turísticos e de interesse na cidade de Santos.</p>
         </div>
-        <button className='button_projeto'>Saiba mais...</button>
+        <button 
+          className="button_projeto" 
+          onClick={() => window.open("https://github.com/brunopuzzuoli/TuriSantos", "_blank")}
+        >
+          Saiba mais...
+        </button>
       </div>
 
       <div className='card-projeto'>
@@ -177,13 +189,13 @@ export function CardProjeto() {
           </div>
           <div className="carousel-inner">
             <div className="carousel-item active">
-              <img src="images/inova_tela_inicio.png" className="d-block w-100" alt="..." />
+              <img src="images/inova_tela_inicio.png" className="d-block w-100 h-100" alt="..." />
             </div>
             <div className="carousel-item">
-              <img src="images/inova_projects.png" className="d-block w-100" alt="..." />
+              <img src="images/inova_projects.png" className="d-block w-100 h-100" alt="..." />
             </div>
             <div className="carousel-item">
-              <img src="images/inova_login.png" className="d-block w-100" alt="..." />
+              <img src="images/inova_login.png" className="d-block w-100 h-100" alt="..." />
             </div>
           </div>
           <button className="carousel-control-prev" type="button" data-bs-target="#carousel2" data-bs-slide="prev">
@@ -199,7 +211,12 @@ export function CardProjeto() {
           <h2>InovaRede</h2>
           <p>Um site para que alunos do Unisantos possam compartilhar seus projetos e permitir que outros entrem.</p>
         </div>
-        <button className='button_projeto'>Saiba mais...</button>
+         <button 
+          className="button_projeto" 
+          onClick={() => window.open("https://github.com/AdrianoBarrosDev/InovaRede", "_blank")}
+        >
+          Saiba mais...
+        </button>
       </div>
 
       <div className='card-projeto'>
@@ -211,13 +228,13 @@ export function CardProjeto() {
           </div>
           <div className="carousel-inner">
             <div className="carousel-item active">
-              <img src="images/proj_port_tela1.png" className="d-block w-100" alt="..." />
+              <img src="images/proj_port_tela1.png" className="d-block w-100 h-100" alt="..." />
             </div>
             <div className="carousel-item">
-              <img src="images/proj_port_tela2.png" className="d-block w-100" alt="..." />
+              <img src="images/proj_port_tela2.png" className="d-block w-100 h-100" alt="..." />
             </div>
             <div className="carousel-item">
-              <img src="images/proj_port_tela3.png" className="d-block w-100" alt="..." />
+              <img src="images/proj_port_tela3.png" className="d-block w-100 h-100" alt="..." />
             </div>
           </div>
           <button className="carousel-control-prev" type="button" data-bs-target="#carousel3" data-bs-slide="prev">
@@ -233,7 +250,12 @@ export function CardProjeto() {
           <h2>WebPortfolio</h2>
           <p>Meu portifolio para usos acadêmicos e profissionais.</p>
         </div>
-        <button className='button_projeto'>Saiba mais...</button>
+          <button 
+          className="button_projeto" 
+          onClick={() => window.open("https://github.com/brunopuzzuoli/webportifoliobruno", "_blank")}
+        >
+          Saiba mais...
+        </button>
       </div>
     </DivHead>
   );
