@@ -121,7 +121,8 @@ form.form {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50%;
+  width: 80%;
+  min-width: 300px;
   margin-bottom: 5%;
 }
 
