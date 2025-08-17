@@ -72,16 +72,16 @@ section {
   margin: 3%;
 }
 
-@media (max-width: 1550px) {
+@media (max-width: 1024px) {
   section {
-  font-size: 4vw;
+  font-size: 3.5vw;
 }
 }
 
 `;
 
-function AccordionItem({ title, children }) {
-  const [open, setOpen] = useState(false);
+function AccordionItem({ title, children, defaultOpen = false }) {
+  const [open, setOpen] = useState(defaultOpen);
 
   return (
     <div className={`item ${open ? "open" : ""}`}>
@@ -112,7 +112,9 @@ export function ConquistasPort() {
           </div>
         </AccordionItem>
 
-        <AccordionItem title="Experiência">
+        <AccordionItem title="Experiência" defaultOpen>
+          <h1><u>Curso Técnico de TI</u></h1>
+          <p>Curso técnico profissionalizante de 1 ano e meio na Etec Aristóteles Ferreira sobre Tecnologia da Informação, envolvendo: Desenvolvimento de Sistemas, Estrutura de Banco de Dados, Manutenção de Software e de Hardware.</p>
         </AccordionItem>
       </section>
     </DivHead>

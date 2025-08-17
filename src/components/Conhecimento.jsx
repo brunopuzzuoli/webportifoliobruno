@@ -26,6 +26,14 @@ const DivHead = styled.div`
   justify-content: center; 
 }
 
+.div_lingua{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+
 .img_lingua {
   display: flex;
   justify-content: center;
@@ -51,6 +59,10 @@ img {
     width: 18vw;
     height: 18vw;
   }
+
+  .div_lingua{
+    font-size: 3vw;
+  }
 }
 `;
 
@@ -66,33 +78,60 @@ export function Conhecimento() {
         <div className="title-conhecimento">
             <h1 className="title">Conhecimento técnico:</h1>
             <div className="linguagens">
+              <div className="div_lingua">
                 <div className="img_lingua">
                     <img src="images/html.png" alt="html" />
                 </div>
+                HTML
+              </div>
+              <div className="div_lingua">
                 <div className="img_lingua">
                     <img src="images/css.png" alt="" />
-                </div>    
+                </div>
+                CSS
+              </div>  
+              <div className="div_lingua"> 
                 <div className="img_lingua">
                     <img src="images/js.png" alt="" />
-                </div>            
+                </div>
+                JavaScript
+              </div>
+              <div className="div_lingua">            
                 <div className="img_lingua">
                     <img src="images/py.png" alt="" />
-                </div>     
+                </div>
+                Python
+              </div>    
+              <div className="div_lingua">
                 <div className="img_lingua">
                     <img src="images/c.png" alt="" />
-                </div> 
+                </div>
+                C
+              </div>  
+              <div className="div_lingua">
                 <div className="img_lingua">
                     <img src="images/csharp.png" alt="" />
-                </div> 
+                </div>
+                C#
+              </div> 
+              <div className="div_lingua">
                 <div className="img_lingua">
                     <img src="images/sql.png" alt="" />
-                </div> 
+                </div>
+                MySQL
+              </div> 
+              <div className="div_lingua">
                 <div className="img_lingua">
                     <img src="images/react.png" alt="" />
-                </div> 
+                </div>
+                React
+              </div> 
+              <div className="div_lingua">
                 <div className="img_lingua">
                     <img src="images/Git.png" alt="" />
-                </div> 
+                </div>
+                GitHub
+              </div> 
             </div>
         </div>
           <div className="divisoria">
