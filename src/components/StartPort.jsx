@@ -88,6 +88,21 @@ a{
   width: 100%;
 }
 
+video{
+  min-width: 100vw;
+}
+
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  min-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
 .img_git{
   width: 35%;
   padding: 5%;
@@ -132,6 +147,16 @@ a{
 export function StartPort() {
   return (
       <DivHead>
+        <video
+          autoPlay
+          muted
+          playsInline
+          loop
+          id="bg-video"
+          onEnded={(e) => e.target.play()}
+        >
+          <source src="/images/Vídeo_back.mp4" type="video/mp4" />
+        </video>
         <div className="introduction">
           <div className="introduction_text">
             <div className="introduction_text_ola">

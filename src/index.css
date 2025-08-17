@@ -1,9 +1,6 @@
 body{
   overflow-x: hidden;
   background-color: #0F0F0F;
-  background-image: url("/images/back_certo.png");
-  background-repeat: no-repeat;
-  background-size: 100%;
 }
 
 .fade-in {
