@@ -27,7 +27,7 @@ overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50%;
+  width: 45%;
   height: auto 0;
 }
 
@@ -108,12 +108,12 @@ video{
   padding: 5%;
 }
 /* Monitores médios/grandes */
-@media (max-width: 1550px) {
+@media (max-width: 1024px) {
   .introduction{
     flex-direction: column;
   }
   .introduction_foto{
-    width: 90%;
+    width: 70%;
   }
   .introduction_text{
     width: 90%;
